@@ -1,0 +1,172 @@
+/* General Dark Mode */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #0a0a0a;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 2px solid white;
+}
+
+input::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    border: 2px solid white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.color-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: calc(20% - 20px);
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #111;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 10px;
+}
+
+.color-box {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px white;
+}
+
+.color-code {
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #444;
+    transition: background 0.3s ease-in-out;
+}
+
+.color-code:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#loading {
+    display: none;
+    font-style: italic;
+    margin-top: 15px;
+    color: #cccccc;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #bbbbbb;
+    text-shadow: 0 0 10px white, 0 0 20px white;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .color-item {
+        width: calc(33.33% - 20px);
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .color-item {
+        width: calc(100% - 20px);
+    }
+
+    input, button {
+        font-size: 12px;
+    }
+}

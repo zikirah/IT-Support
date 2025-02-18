@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Color Palette Generator</title>
+    <link rel="icon" href="images/sawako.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #000000; color: #ffffff;" class="flex flex-col items-center justify-center h-screen p-4">
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="https://github.com/zikirah" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/zikiraahh/" target="_blank">Instagram</a></li>
+            <li><a href="https://zikirah.vercel.app/" target="_blank">Website</a></li>
+        </ul>
+    </nav>
+    <div class="mb-4">
+        <img src="images/sawako.png" alt="Sawako Icon" width="200" height="100" />
+    </div>
+    <div class="w-full max-w-md">
+        <input id="keyword" type="text" class="w-full p-2 rounded bg-gray-800 text-white border border-gray-600" placeholder="Enter a theme keyword...">
+        <button onclick="generateTheme()" class="w-full mt-3 p-2 bg-black hover:bg-gray-800 text-white border border-white rounded">Generate</button>
+    </div>
+    <div id="loading" class="mt-4 hidden">Generating...</div>
+    <div id="themeResult" class="mt-6 hidden w-full max-w-lg">
+        <h2 class="text-lg font-semibold text-center">Generated Colors:</h2>
+        <div id="colorsContainer" class="color-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
