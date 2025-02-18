@@ -15,3 +15,5 @@ An AI-powered web app that generates a color palette based on a given keyword.
 
 ## 📸 Screenshot  
 ![Preview](images/screenshot.png)
+
+## DUE TO API ISSUES THIS IS NOT WORKING FOR NOW 
