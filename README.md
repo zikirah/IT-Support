@@ -14,4 +14,4 @@ An AI-powered web app that generates a color palette based on a given keyword.
 - **Vercel** (Recommended for hosting)  
 
 ## 📸 Screenshot  
-![Preview](screenshot.png)  
+![Preview](images/screenshot.png)
